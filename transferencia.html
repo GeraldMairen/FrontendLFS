@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco LAFISE</title>
+    <meta name="description" content="Prueba Técnica-Desarrollo de Pagina">
+    <!--normalize.css es una pequeña hoja de estilos CSS que hace que los navegadores rendericen los elementos HTML de forma más consistente y uniforme entre sí.-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Fuentes extraidas de Google Fonts-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&amp;family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!--CSS-->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout">
+        <!--Barra Lateral-->
+        <aside class="sidebar">
+        <div class="logotipe">
+                <img loading="lazy" src="img/logo1.png" class="logo-principal" alt="imagen logo">
+            </div>
+        <nav>
+            <ul>
+            <li><i class="fa-solid fa-table-columns"></i> Tablero</li>
+            <li class="active"><i class="fas fa-random"></i> Transferir</li>
+            <li><i class="fas fa-money-bill-wave"></i> Pagar</li>
+            <li ><i class="fa-solid fa-user"></i> Mis transacciones</li>
+            <li><i class="fas fa-cogs"></i> Gestionar</li>
+            <li><i class="fa-solid fa-money-check-dollar"></i> Cheques</li>
+            <li><i class="fa-solid fa-user-check"></i> Pagent</li>
+            <li><i class="fas fa-user-cog"></i> Administrar</li>
+            <li><i class="fas fa-piggy-bank"></i> Ahorro automático</li>
+            <li><i class="fas fa-gear"></i> Configuración</li>
+            </ul>
+        </nav>
+        <div class="footer">
+            <p>Tasa de cambio</p>
+            <p>NIO: 35.1 &nbsp; | &nbsp; USD: 35.95</p>
+        </div>
+        </aside>
+
+        <main class="main">
+        <header class="topbar">
+            <div class="search-bar">
+            <i class="fas fa-bell"></i>
+            <input type="text" placeholder="Buscar...">
+            <img class="avatar" src="https://i.pravatar.cc/30" alt="Perfil">
+            </div>
+        </header>
+
+       <section class="transfer-form">
+  <h1>Transferir</h1>
+
+  <div class="steps">
+    <div class="step completed">✔<span>Paso 1<br>Cuenta origen</span></div>
+    <div class="step completed">✔<span>Paso 2<br>Cuenta destino</span></div>
+    <div class="step completed">✔<span>Paso 3<br>Monto a transferir</span></div>
+    <div class="step active">•<span>Paso 4<br>Datos adicionales</span></div>
+  </div>
+
+  <div class="form-section">
+    <div class="row">
+      <div class="field">
+        <label>Tipo de transacción</label>
+        <select>
+          <option>Terceros</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Cuenta</label>
+        <div class="account-summary">
+          <span class="currency">NIO Cuenta</span>
+          <span class="number">10424667</span>
+          <select class="balance">
+            <option>C$ 38,456</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label><span class="accent">Concepto de débito</span></label>
+        <input type="text" value="Cancelación de préstamo">
+      </div>
+      <div class="field">
+        <label>Concepto de crédito</label>
+        <input type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label>Referencia</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>Enviar confirmación a:</label>
+        <input type="text">
+      </div>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn back">Atrás</button>
+    <button class="btn continue">Continuar</button>
+  </div>
+</section>
+        </main>
+    </div>
+
+<!--Modernizr.js detecta qué funciones de HTML5 y CSS3 soporta el navegador y te permite adaptar tu sitio según esa compatibilidad.-->
+<script src="js/modernizr.js"></script>
+
+</body>
+</html>
